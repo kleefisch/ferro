@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ferro-advocacia.com.br
+
+# Sitemaps
+Sitemap: https://ferro-advocacia.com.br/sitemap.xml
