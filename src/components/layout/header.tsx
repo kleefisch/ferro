@@ -1,14 +1,26 @@
 'use client'
 
 import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { Phone, MessageCircle, Menu, X } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Phone, MessageCircle, Menu, X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/ui/container'
 
 const menuItems = [
   { name: 'Início', href: '#inicio' },
   { name: 'Sobre', href: '/sobre' },
+  { 
+    name: 'Serviços', 
+    href: '#', 
+    dropdown: [
+      { name: 'Habeas Corpus', href: '/servicos/habeas-corpus' },
+      { name: 'Tribunal do Júri', href: '/servicos/tribunal-do-juri' },
+      { name: 'Lei de Drogas', href: '/servicos/lei-de-drogas' },
+      { name: 'Violência Doméstica', href: '/servicos/violencia-domestica' },
+      { name: 'Crimes Patrimoniais', href: '/servicos/crimes-patrimoniais' },
+      { name: 'Atendimento em Delegacia', href: '/servicos/atendimento-delegacia' },
+    ]
+  },
   { name: 'Áreas de Atuação', href: '#areas' },
   { name: 'Artigos', href: '#artigos' },
   { name: 'Contato', href: '#contato' },
@@ -16,6 +28,7 @@ const menuItems = [
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
 
   const handleWhatsApp = () => {
     window.open('https://wa.me/5561999999999?text=Olá! Gostaria de agendar uma consulta.', '_blank')
@@ -46,14 +59,46 @@ export function Header() {
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center space-x-8">
           {menuItems.map((item) => (
-            <motion.a
-              key={item.name}
-              href={item.href}
-              className="text-secondary-300 hover:text-white transition-colors duration-200 font-medium"
-              whileHover={{ y: -2 }}
+            <div 
+              key={item.name} 
+              className="relative"
+              onMouseEnter={() => item.dropdown && setActiveDropdown(item.name)}
+              onMouseLeave={() => setActiveDropdown(null)}
             >
-              {item.name}
-            </motion.a>
+              <motion.a
+                href={item.href}
+                className="text-secondary-300 hover:text-white transition-colors duration-200 font-medium flex items-center gap-1"
+                whileHover={{ y: -2 }}
+              >
+                {item.name}
+                {item.dropdown && <ChevronDown size={16} />}
+              </motion.a>
+
+              {/* Dropdown Menu */}
+              {item.dropdown && (
+                <AnimatePresence>
+                  {activeDropdown === item.name && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      transition={{ duration: 0.2 }}
+                      className="absolute top-full left-0 mt-2 w-56 bg-secondary-800 border border-secondary-700 rounded-lg shadow-xl py-2 z-50"
+                    >
+                      {item.dropdown.map((dropdownItem) => (
+                        <a
+                          key={dropdownItem.name}
+                          href={dropdownItem.href}
+                          className="block px-4 py-2 text-secondary-300 hover:text-white hover:bg-secondary-700 transition-colors duration-200"
+                        >
+                          {dropdownItem.name}
+                        </a>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              )}
+            </div>
           ))}
         </nav>
 
