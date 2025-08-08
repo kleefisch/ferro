@@ -4,13 +4,10 @@ import { motion } from 'framer-motion'
 import { Shield, Clock } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/ui/container'
+import { WhatsAppButton } from '@/components/ui/whatsapp-button'
 import Image from 'next/image'
 
 export function Hero() {
-  const handleWhatsApp = () => {
-    window.open('https://wa.me/5561999999999?text=Olá Dra. Diulliany! Gostaria de agendar uma consulta.', '_blank')
-  }
-
   return (
     <section id="inicio" className="bg-secondary-900 text-white pt-20 pb-4">
       <Container>
@@ -42,18 +39,22 @@ export function Hero() {
                           Se você ou alguém próximo está sendo investigado, processado ou preso, conte com uma advogada criminalista experiente, estratégica e dedicada, disponível 24 horas para agir com rapidez e precisão.
                         </motion.p>
 
-            <motion.div
+                        <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-                                        <Button
-                            onClick={handleWhatsApp}
+                          <WhatsAppButton />
+                          
+                          <Button
+                            onClick={() => document.getElementById('areas-atuacao')?.scrollIntoView({ behavior: 'smooth' })}
                             size="lg"
-                            className="bg-accent-500 hover:bg-accent-600 text-white text-lg px-8 py-4"
+                            variant="outline"
+                            className="border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-sm sm:text-base px-3 sm:px-4 py-2 sm:py-3 inline-flex items-center justify-center whitespace-nowrap"
                           >
-                            Inicie sua defesa agora
+                            <Shield className="mr-2 w-6 h-6 flex-shrink-0" />
+                            Áreas de Atuação
                           </Button>
             </motion.div>
 
@@ -65,11 +66,11 @@ export function Hero() {
             >
               <div className="flex items-center space-x-2">
                 <Shield className="text-accent-500" size={20} />
-                <span className="text-sm">Atendimento confidencial</span>
+                <span className="text-sm">Sigilo garantido</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Clock className="text-accent-500" size={20} />
-                <span className="text-sm">Resposta rápida</span>
+                <span className="text-sm">Atendimento 24h</span>
               </div>
             </motion.div>
           </motion.div>
@@ -91,6 +92,14 @@ export function Hero() {
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-br from-accent-500/10 to-transparent rounded-2xl"></div>
+
+              {/* Badge sobre a foto */}
+              <div className="absolute bottom-3 right-3">
+                <div className="inline-flex items-center gap-2 bg-secondary-800/90 border border-secondary-700 px-3 py-1 rounded-full shadow-lg">
+                  <i className="fa-solid fa-id-card text-accent-500" aria-hidden="true"></i>
+                  <span className="text-xs font-medium">Dra. Diulliany Ferro</span>
+                </div>
+              </div>
 
             </div>
           </motion.div>

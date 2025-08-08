@@ -6,9 +6,8 @@ import { Container } from '@/components/ui/container'
 
 const menuItems = [
   { name: 'Início', href: '#inicio' },
-  { name: 'Sobre', href: '#sobre' },
+  { name: 'Sobre', href: '/sobre' },
   { name: 'Áreas de Atuação', href: '#areas' },
-  { name: 'Serviços', href: '#servicos' },
   { name: 'Artigos', href: '#artigos' },
   { name: 'Contato', href: '#contato' },
 ]

@@ -11,7 +11,7 @@ export function Container({ children, className, as: Component = 'div' }: Contai
   return (
     <Component
       className={cn(
-        'mx-auto max-w-7xl px-4 sm:px-6 lg:px-8',
+        'mx-auto w-full max-w-screen-xl 2xl:max-w-[90rem] px-4 sm:px-6 lg:px-8',
         className
       )}
     >

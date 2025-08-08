@@ -1,9 +1,10 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { GraduationCap, MapPin, Shield } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { WhatsAppButton } from '@/components/ui/whatsapp-button'
 import { Container } from '@/components/ui/container'
+import Image from 'next/image'
 
 export function Sobre() {
   const handleConhecerTrajetoria = () => {
@@ -23,22 +24,18 @@ export function Sobre() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative">
-              {/* Placeholder for professional photo */}
-              <div className="aspect-[4/5] bg-gradient-to-br from-secondary-800 to-secondary-700 rounded-2xl overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-500/20 to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <div className="w-40 h-40 bg-accent-500/20 rounded-full mx-auto mb-6 flex items-center justify-center">
-                      <Shield size={64} className="text-accent-500" />
-                    </div>
-                    <p className="text-xl font-semibold">Dra. Diulliany Ferro</p>
-                    <p className="text-secondary-300">Advocacia Criminal</p>
-                  </div>
-                </div>
+            <div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-full mx-auto">
+              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-secondary-800">
+                <Image
+                  src="/images/sobre/dra-diulliany-sobre.webp"
+                  alt="Dra. Diulliany Ferro - Advocacia Criminal"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(min-width: 1024px) 480px, 100vw"
+                  priority={false}
+                />
+                <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-accent-500/10 to-transparent"></div>
               </div>
-              
-
             </div>
           </motion.div>
 
@@ -48,74 +45,62 @@ export function Sobre() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-8"
           >
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Sobre a Dra. Diulliany Ferro
-              </h2>
-              <p className="text-xl text-secondary-300 leading-relaxed">
-                Advogada especializada em Direito Criminal com mais de 10 anos de experiência, 
-                atuando em Goiás, Distrito Federal, Minas Gerais e Mato Grosso.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <GraduationCap className="text-accent-500 mt-1" size={20} />
-                <div>
-                  <h3 className="font-semibold">Formação Acadêmica</h3>
-                  <p className="text-secondary-300 text-sm">
-                    Graduada em Direito pela Universidade Federal de Goiás (UFG) com 
-                    especialização em Direito Penal e Processual Penal.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <Shield className="text-accent-500 mt-1" size={20} />
-                <div>
-                  <h3 className="font-semibold">Especializações</h3>
-                  <p className="text-secondary-300 text-sm">
-                    Pós-graduada em Direito Penal e Processual Penal. 
-                    Especialista em Tribunal do Júri e Execução Penal.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <MapPin className="text-accent-500 mt-1" size={20} />
-                <div>
-                  <h3 className="font-semibold">Atuação Regional</h3>
-                  <p className="text-secondary-300 text-sm">
-                    Atendimento em Goiás, Distrito Federal, Minas Gerais e Mato Grosso, 
-                    com escritório principal em Goiânia.
-                  </p>
-                </div>
+              <p className="text-accent-500 uppercase tracking-wide text-xs mb-2">CONHEÇA A DRA. DIULLIANY FERRO</p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Defesa Criminal com Compromisso e Excelência</h2>
+              <div className="space-y-6 text-secondary-300 leading-relaxed">
+                <p>
+                  A Dra. Diulliany Ferro é advogada criminalista com sólida formação e ampla experiência em Direito Penal e Processual Penal, atuando com seriedade, agilidade e absoluto profissionalismo em todas as fases do processo.
+                </p>
+                <p>
+                  Reconhecida por sua postura firme e estratégica, tem alta taxa de sucesso na defesa de seus clientes, tanto em investigações quanto em ações penais complexas.
+                </p>
+                <p>
+                  Comprometida com a justiça e a ética, oferece um atendimento personalizado, humano e eficiente, sempre focada em resultados concretos e na proteção dos direitos fundamentais.
+                </p>
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-4 pt-4">
-              <div className="bg-secondary-800 px-4 py-2 rounded-lg">
-                <span className="text-accent-500 font-semibold">OAB/GO</span>
-                <span className="text-secondary-300 ml-2">12345</span>
+            <div className="flex flex-wrap gap-5 pt-4">
+              <div className="bg-secondary-800 px-4 py-2 rounded-lg inline-flex items-center gap-2">
+                <i className="fa-solid fa-scale-balanced text-accent-500" aria-hidden="true"></i>
+                <span className="text-secondary-300">
+                  <span className="text-accent-500 font-semibold">Especialista</span> em Tribunal do Júri
+                </span>
               </div>
-              <div className="bg-secondary-800 px-4 py-2 rounded-lg">
-                <span className="text-accent-500 font-semibold">10+</span>
-                <span className="text-secondary-300 ml-2">anos de experiência</span>
+              <div className="bg-secondary-800 px-4 py-2 rounded-lg inline-flex items-center gap-2">
+                <i className="fa-solid fa-chart-line text-accent-500" aria-hidden="true"></i>
+                <span className="text-secondary-300">
+                  <span className="text-accent-500 font-semibold">98%</span> de casos bem-sucedidos
+                </span>
+              </div>
+              <div className="bg-secondary-800 px-4 py-2 rounded-lg inline-flex items-center gap-2">
+                <i className="fa-solid fa-globe text-accent-500" aria-hidden="true"></i>
+                <span className="text-secondary-300">
+                  <span className="text-accent-500 font-semibold">Atuação</span> em todo o território nacional
+                </span>
+              </div>
+              <div className="bg-secondary-800 px-4 py-2 rounded-lg inline-flex items-center gap-2">
+                <i className="fa-solid fa-id-card text-accent-500" aria-hidden="true"></i>
+                <span className="text-secondary-300">
+                  <span className="text-accent-500 font-semibold">OAB/GO</span> 66.387
+                </span>
               </div>
             </div>
 
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="pt-4"
-            >
-              <Button
-                onClick={handleConhecerTrajetoria}
-                className="bg-accent-500 hover:bg-accent-600 text-white"
-              >
-                Conheça minha trajetória
-              </Button>
+            <motion.div whileHover={{ scale: 1.02 }} className="pt-6">
+              <div className="flex flex-col sm:flex-row gap-5">
+                <WhatsAppButton className="w-full sm:w-auto">ESCLAREÇA SUAS DÚVIDAS</WhatsAppButton>
+                <Button
+                  onClick={handleConhecerTrajetoria}
+                  variant="outline"
+                  className="w-full sm:w-auto border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white"
+                >
+                  Conheça minha trajetória
+                </Button>
+              </div>
             </motion.div>
           </motion.div>
         </div>

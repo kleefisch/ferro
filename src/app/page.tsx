@@ -2,8 +2,8 @@ import { Header } from '@/components/layout/header'
 import { Hero } from '@/components/sections/hero'
 import { AreasAtuacao } from '@/components/sections/areas-atuacao'
 import { Sobre } from '@/components/sections/sobre'
-import { Servicos } from '@/components/sections/servicos'
 import { Resultados } from '@/components/sections/resultados'
+import { CasosSucesso } from '@/components/sections/casos-sucesso'
 import { Depoimentos } from '@/components/sections/depoimentos'
 import { FAQ } from '@/components/sections/faq'
 import { Contato } from '@/components/sections/contato'
@@ -16,8 +16,8 @@ export default function Home() {
       <Hero />
       <AreasAtuacao />
       <Sobre />
-      <Servicos />
       <Resultados />
+      <CasosSucesso />
       <Depoimentos />
       <FAQ />
       <Contato />

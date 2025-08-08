@@ -1,42 +1,59 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Shield, Users, DollarSign, Gavel } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { openWhatsAppWithGreeting, WhatsAppButton } from '@/components/ui/whatsapp-button'
 import { Container } from '@/components/ui/container'
 import { StaggerContainer, StaggerItem } from '@/components/ui/animations'
 
 const areas = [
   {
-    icon: Gavel,
+    icon: 'fa-solid fa-building-shield',
+    title: 'Atendimento em Delegacia',
+    description: 'Acompanhamento em flagrantes e depoimentos, garantindo a proteção de seus direitos desde o início.'
+  },
+  {
+    icon: 'fa-solid fa-gavel',
+    title: 'Audiências e Julgamentos',
+    description: 'Representação técnica e combativa em audiências de custódia, instrução e sessões de julgamento.'
+  },
+  {
+    icon: 'fa-solid fa-pills',
+    title: 'Lei de Drogas',
+    description: 'Atuação em casos de tráfico, associação para o tráfico e posse de entorpecentes para uso pessoal.'
+  },
+  {
+    icon: 'fa-solid fa-magnifying-glass',
+    title: 'Inquérito e Investigação',
+    description: 'Defesa estratégica durante a fase de investigação policial, buscando o arquivamento do inquérito.'
+  },
+  {
+    icon: 'fa-solid fa-building-columns',
     title: 'Tribunal do Júri',
-    description: 'Defesa especializada em crimes dolosos contra a vida com ampla experiência em júris.'
+    description: 'Atuação especializada em plenário em crimes dolosos contra a vida, como homicídio e feminicídio, do inquérito ao julgamento.'
   },
   {
-    icon: Users,
-    title: 'Crimes Contra a Pessoa',
-    description: 'Atuação em lesões corporais, ameaças, sequestro e outros crimes contra a pessoa.'
+    icon: 'fa-solid fa-house',
+    title: 'Violência Doméstica',
+    description: 'Defesa em casos envolvendo a Lei Maria da Penha, atuando na defesa dos direitos do acusado ou da vítima.'
   },
   {
-    icon: DollarSign,
-    title: 'Crimes Econômicos',
-    description: 'Defesa em crimes contra a ordem econômica, estelionato e lavagem de dinheiro.'
+    icon: 'fa-solid fa-heart-crack',
+    title: 'Crimes Contra a Integridade Física',
+    description: 'Defesa em casos de homicídio, lesão corporal, vias de fato e agressão.'
   },
   {
-    icon: Shield,
-    title: 'Execução Penal',
-    description: 'Acompanhamento de execução de penas e benefícios da Lei de Execução Penal.'
+    icon: 'fa-solid fa-wallet',
+    title: 'Crimes Patrimoniais',
+    description: 'Defesa em casos de roubo, furto, estelionato, apropriação indébita e receptação.'
   }
 ]
 
 export function AreasAtuacao() {
-  const handleVerTodas = () => {
-    // Scroll to areas section or navigate to full areas page
-    document.getElementById('areas')?.scrollIntoView({ behavior: 'smooth' })
-  }
+  
 
   return (
-    <section id="areas" className="bg-secondary-700 text-white py-16">
+    <section id="areas-atuacao" className="bg-secondary-700 text-white py-16">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -49,24 +66,35 @@ export function AreasAtuacao() {
             Áreas de Atuação
           </h2>
           <p className="text-xl text-secondary-300 max-w-3xl mx-auto">
-            Especialização em Direito Criminal com foco em resultados e defesa eficaz
+            Defesa criminal especializada com atendimento personalizado em todas as fases do processo
           </p>
         </motion.div>
 
-        <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 auto-rows-fr">
           {areas.map((area, index) => (
             <StaggerItem key={index}>
               <motion.div
-                className="bg-secondary-800 p-6 rounded-xl hover:bg-secondary-600 transition-all duration-300 group"
+                className="bg-secondary-800 p-6 rounded-xl hover:bg-secondary-600 transition-all duration-300 group h-full flex flex-col"
                 whileHover={{ y: -5, scale: 1.02 }}
               >
-                <div className="text-accent-500 mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <area.icon size={48} />
+                <div className="text-accent-500 mb-4 group-hover:scale-110 transition-transform duration-300 text-center md:text-left">
+                  <i className={area.icon} style={{ fontSize: '2rem' }}></i>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{area.title}</h3>
-                <p className="text-secondary-300 text-sm leading-relaxed">
+                <h3 className="text-xl font-semibold mb-3 text-center md:text-left">{area.title}</h3>
+                <p className="text-secondary-300 text-sm leading-relaxed flex-grow text-center md:text-left mb-4">
                   {area.description}
                 </p>
+                <div className="mt-auto text-center">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-accent-500 hover:text-accent-400 hover:bg-transparent"
+                    onClick={() => openWhatsAppWithGreeting('5562995292129')}
+                  >
+                    <i className="fa-brands fa-whatsapp mr-2" style={{ fontSize: '1rem' }}></i>
+                    Atendimento via WhatsApp
+                  </Button>
+                </div>
               </motion.div>
             </StaggerItem>
           ))}
@@ -79,13 +107,7 @@ export function AreasAtuacao() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <Button
-            onClick={handleVerTodas}
-            variant="outline"
-            className="border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white"
-          >
-            Ver todas as áreas de atuação
-          </Button>
+          <WhatsAppButton className="w-full sm:w-auto">FALE AGORA SOBRE SEU CASO</WhatsAppButton>
         </motion.div>
       </Container>
     </section>
