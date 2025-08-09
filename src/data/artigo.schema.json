@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Artigo Schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identificador único do artigo"
+    },
+    "titulo": {
+      "type": "string",
+      "description": "Título do artigo"
+    },
+    "resumo": {
+      "type": "string",
+      "description": "Resumo/descrição do artigo"
+    },
+    "data": {
+      "type": "string",
+      "format": "date",
+      "description": "Data de publicação"
+    },
+    "tempoLeitura": {
+      "type": "string",
+      "description": "Tempo estimado de leitura"
+    },
+    "autor": {
+      "type": "string",
+      "description": "Nome do autor"
+    },
+    "categoria": {
+      "type": "string",
+      "enum": [
+        "Direito Criminal",
+        "Habeas Corpus", 
+        "Prisão em Flagrante",
+        "Tribunal do Júri",
+        "Lei de Drogas",
+        "Violência Doméstica"
+      ],
+      "description": "Categoria do artigo"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags relacionadas ao artigo"
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL amigável do artigo"
+    },
+    "conteudo": {
+      "type": "string",
+      "description": "Conteúdo completo do artigo (opcional)"
+    },
+    "imagem": {
+      "type": "string",
+      "description": "URL da imagem do artigo (opcional)"
+    }
+  },
+  "required": ["id", "titulo", "resumo", "data", "tempoLeitura", "autor", "categoria", "tags", "slug"]
+}

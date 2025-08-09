@@ -104,3 +104,51 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
+
+/* Estilos para artigos */
+.prose {
+  max-width: none;
+  color: var(--color-secondary-700);
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: var(--color-secondary-700);
+}
+
+.prose strong {
+  font-weight: 600;
+  color: var(--color-secondary-900);
+}
+
+.prose h2, .prose h3, .prose h4 {
+  color: var(--color-secondary-900);
+}
+
+.prose ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.prose ul li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

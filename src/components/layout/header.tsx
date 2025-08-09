@@ -22,7 +22,7 @@ const menuItems = [
     ]
   },
   { name: 'Áreas de Atuação', href: '#areas' },
-  { name: 'Artigos', href: '#artigos' },
+  { name: 'Artigos', href: '/artigos' },
   { name: 'Contato', href: '#contato' },
 ]
 
