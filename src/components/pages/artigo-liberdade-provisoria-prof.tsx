@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Calendar, Clock, User, ArrowLeft, Award, CheckCircle, Info, Star } from 'lucide-react'
+import { Calendar, Clock, User, ArrowLeft, Award, CheckCircle, Info, Star, Scale, FileText, Shield, Users, Home, Briefcase } from 'lucide-react'
 import { Container } from '@/components/ui/container'
 import { Button } from '@/components/ui/button'
 import { WhatsAppButton } from '@/components/ui/whatsapp-button'
@@ -167,27 +167,58 @@ export function ArtigoLiberdadeProvisoriaProf() {
                       direito reconhece que toda pessoa é inocente até que se prove o contrário de forma definitiva.
                     </p>
 
-                    <div className="bg-white border border-secondary-200 rounded-2xl p-8 shadow-sm mb-8">
-                      <h4 className="font-bold text-secondary-900 mb-4 flex items-center">
-                        <Info className="w-5 h-5 mr-3 text-accent-600" />
-                        Importante saber:
-                      </h4>
-                      <div className="grid md:grid-cols-2 gap-6 text-sm">
-                        <div>
-                          <h5 className="font-semibold text-secondary-800 mb-2">✓ Medida cautelar especializada</h5>
-                          <p className="text-secondary-600">Permite aguardar julgamento em liberdade com garantias processuais</p>
+                    <div className="bg-gradient-to-br from-white to-secondary-50 border border-accent-200 rounded-3xl p-8 shadow-lg mb-8 relative overflow-hidden">
+                      <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-accent-500 to-accent-600"></div>
+                      <div className="flex items-center mb-6">
+                        <div className="w-12 h-12 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center mr-4 shadow-md">
+                          <Info className="w-6 h-6 text-white" />
                         </div>
-                        <div>
-                          <h5 className="font-semibold text-secondary-800 mb-2">✓ Pode ter condições específicas</h5>
-                          <p className="text-secondary-600">O juiz pode impor fiança ou medidas alternativas conforme o caso</p>
+                        <h4 className="text-2xl font-bold text-secondary-900">Importante saber</h4>
+                      </div>
+                      <div className="grid md:grid-cols-2 gap-8">
+                        <div className="group">
+                          <div className="flex items-start space-x-4">
+                            <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                              <CheckCircle className="w-5 h-5 text-white" />
+                            </div>
+                            <div>
+                              <h5 className="font-bold text-secondary-900 mb-2">É uma ferramenta especializada</h5>
+                              <p className="text-secondary-700 text-sm">Permite aguardar julgamento em liberdade com garantias do processo</p>
+                            </div>
+                          </div>
                         </div>
-                        <div>
-                          <h5 className="font-semibold text-secondary-800 mb-2">✓ Requer análise jurídica especializada</h5>
-                          <p className="text-secondary-600">Precisa ser solicitada através de advogado criminalista experiente</p>
+                        <div className="group">
+                          <div className="flex items-start space-x-4">
+                            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                              <Scale className="w-5 h-5 text-white" />
+                            </div>
+                            <div>
+                              <h5 className="font-bold text-secondary-900 mb-2">Pode ter condições específicas</h5>
+                              <p className="text-secondary-700 text-sm">O juiz pode impor fiança ou outras regras conforme o caso</p>
+                            </div>
+                          </div>
                         </div>
-                        <div>
-                          <h5 className="font-semibold text-secondary-800 mb-2">✓ Avaliação individual do magistrado</h5>
-                          <p className="text-secondary-600">Cada situação é analisada considerando critérios legais específicos</p>
+                        <div className="group">
+                          <div className="flex items-start space-x-4">
+                            <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                              <Shield className="w-5 h-5 text-white" />
+                            </div>
+                            <div>
+                              <h5 className="font-bold text-secondary-900 mb-2">Requer análise jurídica especializada</h5>
+                              <p className="text-secondary-700 text-sm">Precisa ser solicitada através de advogado criminalista experiente</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="group">
+                          <div className="flex items-start space-x-4">
+                            <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                              <Users className="w-5 h-5 text-white" />
+                            </div>
+                            <div>
+                              <h5 className="font-bold text-secondary-900 mb-2">Avaliação individual do magistrado</h5>
+                              <p className="text-secondary-700 text-sm">Cada situação é analisada considerando critérios legais específicos</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
