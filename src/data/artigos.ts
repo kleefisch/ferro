@@ -42,7 +42,7 @@ export const artigos: Artigo[] = [
     titulo: 'Liberdade Provisória: Um Guia Completo para Entender Seus Direitos',
     resumo: 'Compreenda de forma clara e objetiva como funciona a liberdade provisória, quais são seus direitos e quando é possível obtê-la.',
     data: '9 de Agosto de 2025',
-    tempoLeitura: '5 min',
+    tempoLeitura: '8 min',
     autor: 'Dra. Diulliany Ferro',
     categoria: 'Habeas Corpus',
     tags: ['liberdade provisória', 'direitos', 'guia completo', 'orientação jurídica'],

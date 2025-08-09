@@ -72,7 +72,7 @@ export function ArtigoLiberdadeProvisoriaProf() {
                   </div>
                   <div className="flex items-center gap-2 bg-secondary-800/50 px-4 py-2 rounded-full backdrop-blur-sm">
                     <Clock className="w-4 h-4" />
-                    <span className="text-sm">Leitura de 5 min</span>
+                    <span className="text-sm">Leitura de 8 min</span>
                   </div>
                 </motion.div>
 
@@ -128,13 +128,19 @@ export function ArtigoLiberdadeProvisoriaProf() {
                 >
                   {/* Introdução elegante */}
                   <div className="bg-gradient-to-br from-secondary-50 to-accent-50 border-l-4 border-accent-500 p-8 rounded-r-2xl mb-12 shadow-sm">
-                    <p className="text-xl leading-relaxed text-secondary-800 mb-4 font-medium">
-                      A liberdade provisória representa um dos direitos mais importantes no sistema judicial brasileiro. 
-                      Este guia esclarece de forma objetiva quando e como esse direito pode ser exercido.
+                    <p className="text-xl leading-relaxed text-secondary-800 mb-6 font-medium">
+                      No sistema jurídico brasileiro, ser acusado de um crime não significa automaticamente a privação da liberdade. 
+                      O princípio da presunção de inocência garante que ninguém será considerado culpado antes de uma sentença 
+                      condenatória definitiva.
+                    </p>
+                    <p className="text-secondary-700 leading-relaxed mb-4">
+                      É nesse contexto que a Liberdade Provisória surge como um direito fundamental, permitindo que o acusado 
+                      responda ao processo em liberdade, sob certas condições. Este direito visa harmonizar a liberdade individual 
+                      com a necessidade de segurança pública e o andamento da justiça.
                     </p>
                     <p className="text-secondary-700 leading-relaxed">
-                      Compreender esse processo é fundamental para quem enfrenta uma situação judicial complexa, 
-                      pois permite tomar decisões informadas sobre os próximos passos.
+                      Compreender profundamente esse processo é essencial para quem enfrenta uma situação judicial complexa, 
+                      pois permite tomar decisões estratégicas e informadas sobre os próximos passos.
                     </p>
                   </div>
 
@@ -149,10 +155,16 @@ export function ArtigoLiberdadeProvisoriaProf() {
                       </h2>
                     </div>
 
+                    <p className="mb-8 text-secondary-700 leading-relaxed">
+                      A liberdade provisória é uma medida cautelar que permite ao investigado ou acusado aguardar o julgamento 
+                      em liberdade, sem a necessidade de prisão preventiva. Ela representa um equilíbrio delicado entre 
+                      o direito fundamental à liberdade individual e as necessidades do processo judicial.
+                    </p>
+
                     <p className="mb-6 text-secondary-700 leading-relaxed">
-                      A liberdade provisória é o direito de uma pessoa responder ao processo judicial em liberdade, 
-                      ao invés de permanecer presa durante a tramitação do caso. É uma garantia constitucional que 
-                      reconhece que toda pessoa é inocente até que se prove o contrário.
+                      O Código de Processo Penal estabelece as condições para sua concessão, que podem ser com ou sem fiança, 
+                      ou ainda, com a imposição de medidas cautelares diversas da prisão. É importante compreender que este 
+                      direito reconhece que toda pessoa é inocente até que se prove o contrário de forma definitiva.
                     </p>
 
                     <div className="bg-white border border-secondary-200 rounded-2xl p-8 shadow-sm mb-8">
@@ -162,20 +174,20 @@ export function ArtigoLiberdadeProvisoriaProf() {
                       </h4>
                       <div className="grid md:grid-cols-2 gap-6 text-sm">
                         <div>
-                          <h5 className="font-semibold text-secondary-800 mb-2">✓ É um direito, não um favor</h5>
-                          <p className="text-secondary-600">A liberdade provisória está prevista na Constituição Federal</p>
+                          <h5 className="font-semibold text-secondary-800 mb-2">✓ Medida cautelar especializada</h5>
+                          <p className="text-secondary-600">Permite aguardar julgamento em liberdade com garantias processuais</p>
                         </div>
                         <div>
-                          <h5 className="font-semibold text-secondary-800 mb-2">✓ Pode ter condições</h5>
-                          <p className="text-secondary-600">O juiz pode impor regras que devem ser cumpridas</p>
+                          <h5 className="font-semibold text-secondary-800 mb-2">✓ Pode ter condições específicas</h5>
+                          <p className="text-secondary-600">O juiz pode impor fiança ou medidas alternativas conforme o caso</p>
                         </div>
                         <div>
-                          <h5 className="font-semibold text-secondary-800 mb-2">✓ Não é automática</h5>
-                          <p className="text-secondary-600">Precisa ser solicitada através de advogado especializado</p>
+                          <h5 className="font-semibold text-secondary-800 mb-2">✓ Requer análise jurídica especializada</h5>
+                          <p className="text-secondary-600">Precisa ser solicitada através de advogado criminalista experiente</p>
                         </div>
                         <div>
-                          <h5 className="font-semibold text-secondary-800 mb-2">✓ Depende do caso</h5>
-                          <p className="text-secondary-600">Cada situação é analisada individualmente pelo magistrado</p>
+                          <h5 className="font-semibold text-secondary-800 mb-2">✓ Avaliação individual do magistrado</h5>
+                          <p className="text-secondary-600">Cada situação é analisada considerando critérios legais específicos</p>
                         </div>
                       </div>
                     </div>
@@ -193,9 +205,32 @@ export function ArtigoLiberdadeProvisoriaProf() {
                     </div>
 
                     <p className="mb-8 text-secondary-700 leading-relaxed">
-                      A liberdade provisória pode ser concedida quando não há necessidade de manter a pessoa presa 
-                      durante o processo. O juiz avalia diversos fatores para tomar essa decisão.
+                      A concessão da liberdade provisória depende da análise criteriosa de alguns fatores pelo magistrado, 
+                      principalmente a ausência dos requisitos para a prisão preventiva. O juiz avalia diversos elementos 
+                      para determinar se é seguro e apropriado permitir que o acusado responda ao processo em liberdade.
                     </p>
+
+                    <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-8">
+                      <h4 className="font-bold text-blue-800 mb-4">📋 Critérios de Análise Judicial</h4>
+                      <div className="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                          <h6 className="font-semibold text-blue-700 mb-2">• Inexistência de motivos para prisão preventiva</h6>
+                          <p className="text-blue-600">Análise se há risco para ordem pública, instrução criminal ou aplicação da lei penal</p>
+                        </div>
+                        <div>
+                          <h6 className="font-semibold text-blue-700 mb-2">• Natureza e gravidade do delito</h6>
+                          <p className="text-blue-600">Avaliação do tipo de crime e suas circunstâncias específicas</p>
+                        </div>
+                        <div>
+                          <h6 className="font-semibold text-blue-700 mb-2">• Antecedentes do acusado</h6>
+                          <p className="text-blue-600">Histórico criminal, conduta social e vínculos com a comunidade</p>
+                        </div>
+                        <div>
+                          <h6 className="font-semibold text-blue-700 mb-2">• Possibilidade de medidas alternativas</h6>
+                          <p className="text-blue-600">Avaliação se outras medidas cautelares são suficientes para o caso</p>
+                        </div>
+                      </div>
+                    </div>
 
                     <div className="space-y-6 mb-8">
                       <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-xl">
@@ -204,24 +239,46 @@ export function ArtigoLiberdadeProvisoriaProf() {
                           Situações Favoráveis
                         </h4>
                         <ul className="space-y-2 text-green-700 text-sm">
-                          <li>• Pessoa com residência fixa e vínculos familiares</li>
-                          <li>• Trabalho ou atividade profissional regular</li>
-                          <li>• Primeiro envolvimento com a justiça</li>
-                          <li>• Crime sem violência ou grave ameaça</li>
-                          <li>• Não há risco de fuga ou interferência na investigação</li>
+                          <li>• <strong>Primariedade e bons antecedentes:</strong> Ausência de condenações anteriores</li>
+                          <li>• <strong>Residência fixa e vínculos familiares:</strong> Demonstração de enraizamento social</li>
+                          <li>• <strong>Ocupação lícita regular:</strong> Trabalho ou atividade profissional comprovada</li>
+                          <li>• <strong>Crime sem violência ou grave ameaça:</strong> Delitos de menor potencial ofensivo</li>
+                          <li>• <strong>Inexistência de risco de fuga:</strong> Não há indícios de tentativa de evasão</li>
+                          <li>• <strong>Não interferência na investigação:</strong> Sem risco de destruição de provas ou ameaça a testemunhas</li>
                         </ul>
                       </div>
 
                       <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl">
                         <h4 className="font-bold text-blue-800 mb-3">
-                          Condições Que Podem Ser Impostas
+                          Modalidades de Liberdade Provisória
                         </h4>
-                        <ul className="space-y-2 text-blue-700 text-sm">
-                          <li>• Comparecer em juízo quando solicitado</li>
-                          <li>• Não se ausentar da cidade sem autorização</li>
-                          <li>• Não frequentar determinados locais</li>
-                          <li>• Recolher-se em casa durante a noite</li>
-                          <li>• Usar tornozeleira eletrônica</li>
+                        <div className="space-y-3 text-blue-700 text-sm">
+                          <div>
+                            <h6 className="font-semibold mb-1">🏦 Com Fiança</h6>
+                            <p>Pagamento de valor pecuniário fixado pelo juiz como garantia</p>
+                          </div>
+                          <div>
+                            <h6 className="font-semibold mb-1">📋 Sem Fiança</h6>
+                            <p>Concessão baseada apenas nos critérios legais, sem pagamento</p>
+                          </div>
+                          <div>
+                            <h6 className="font-semibold mb-1">⚖️ Com Medidas Cautelares</h6>
+                            <p>Imposição de condições específicas para garantir o comparecimento</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-xl">
+                        <h4 className="font-bold text-orange-800 mb-3">
+                          Medidas Cautelares Alternativas
+                        </h4>
+                        <ul className="space-y-2 text-orange-700 text-sm">
+                          <li>• <strong>Comparecimento periódico em juízo:</strong> Apresentação regular conforme determinação</li>
+                          <li>• <strong>Proibição de acesso a locais:</strong> Restrição a determinados lugares</li>
+                          <li>• <strong>Proibição de contato:</strong> Vedação de comunicação com pessoas específicas</li>
+                          <li>• <strong>Monitoramento eletrônico:</strong> Uso de tornozeleira eletrônica</li>
+                          <li>• <strong>Recolhimento domiciliar noturno:</strong> Permanência em casa em horários determinados</li>
+                          <li>• <strong>Suspensão de atividades:</strong> Interrupção temporária de função pública ou atividade econômica</li>
                         </ul>
                       </div>
                     </div>
@@ -238,10 +295,37 @@ export function ArtigoLiberdadeProvisoriaProf() {
                       </h2>
                     </div>
 
-                    <p className="mb-6 text-secondary-700 leading-relaxed">
-                      O pedido de liberdade provisória deve ser feito por um advogado especializado, que conhece 
-                      os procedimentos corretos e pode apresentar os melhores argumentos para cada caso específico.
+                    <p className="mb-8 text-secondary-700 leading-relaxed">
+                      O pedido de liberdade provisória pode ser feito de ofício pelo juiz, pelo Ministério Público, 
+                      ou, mais comumente, pela defesa do acusado. É crucial que o pedido seja elaborado por um 
+                      advogado criminalista com experiência, pois ele possui o conhecimento técnico necessário 
+                      para apresentar os melhores argumentos jurídicos para cada caso específico.
                     </p>
+
+                    <div className="bg-purple-50 border border-purple-200 rounded-2xl p-6 mb-8">
+                      <h4 className="font-bold text-purple-800 mb-4 flex items-center">
+                        <Award className="w-5 h-5 mr-2" />
+                        Por Que a Experiência do Advogado Criminalista é Fundamental
+                      </h4>
+                      <div className="grid md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                          <h6 className="font-semibold text-purple-700 mb-2">🔍 Análise técnica do flagrante</h6>
+                          <p className="text-purple-600">Verificação da legalidade da prisão e identificação de vícios processuais</p>
+                        </div>
+                        <div>
+                          <h6 className="font-semibold text-purple-700 mb-2">📝 Argumentação jurídica especializada</h6>
+                          <p className="text-purple-600">Apresentação de fundamentos legais sólidos para convencer o magistrado</p>
+                        </div>
+                        <div>
+                          <h6 className="font-semibold text-purple-700 mb-2">⚡ Agilidade processual</h6>
+                          <p className="text-purple-600">Rapidez na apresentação do pedido, especialmente após prisão em flagrante</p>
+                        </div>
+                        <div>
+                          <h6 className="font-semibold text-purple-700 mb-2">🎯 Estratégia personalizada</h6>
+                          <p className="text-purple-600">Adequação das medidas cautelares ao perfil e situação do cliente</p>
+                        </div>
+                      </div>
+                    </div>
 
                     <div className="bg-gradient-to-r from-secondary-50 to-accent-50 rounded-2xl p-8 mb-8 border border-secondary-100">
                       <h4 className="font-bold text-secondary-900 mb-6 text-center text-xl">
@@ -252,23 +336,41 @@ export function ArtigoLiberdadeProvisoriaProf() {
                           <div className="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                             <span className="text-white font-bold">1</span>
                           </div>
-                          <h5 className="font-semibold text-secondary-800 mb-2">Análise do Caso</h5>
-                          <p className="text-secondary-600 text-sm">Avaliação detalhada da situação jurídica</p>
+                          <h5 className="font-semibold text-secondary-800 mb-2">Análise Jurídica Completa</h5>
+                          <p className="text-secondary-600 text-sm">Avaliação detalhada da legalidade da prisão e viabilidade da liberdade provisória</p>
                         </div>
                         <div className="text-center">
                           <div className="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                             <span className="text-white font-bold">2</span>
                           </div>
-                          <h5 className="font-semibold text-secondary-800 mb-2">Coleta de Documentos</h5>
-                          <p className="text-secondary-600 text-sm">Reunião de comprovantes e certidões necessárias</p>
+                          <h5 className="font-semibold text-secondary-800 mb-2">Reunião de Provas</h5>
+                          <p className="text-secondary-600 text-sm">Coleta estratégica de documentos e evidências que demonstrem vínculos sociais</p>
                         </div>
                         <div className="text-center">
                           <div className="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                             <span className="text-white font-bold">3</span>
                           </div>
-                          <h5 className="font-semibold text-secondary-800 mb-2">Petição ao Juiz</h5>
-                          <p className="text-secondary-600 text-sm">Elaboração e protocolo do pedido fundamentado</p>
+                          <h5 className="font-semibold text-secondary-800 mb-2">Petição Fundamentada</h5>
+                          <p className="text-secondary-600 text-sm">Elaboração técnica do pedido com argumentação jurídica sólida e personalizada</p>
                         </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-red-50 border border-red-200 rounded-2xl p-6 mb-8">
+                      <h4 className="font-bold text-red-800 mb-3">⏰ Timing Crítico: A Importância da Celeridade</h4>
+                      <div className="space-y-3 text-red-700 text-sm">
+                        <p>
+                          <strong>Audiência de Custódia:</strong> O pedido deve ser apresentado preferencialmente 
+                          durante a audiência de custódia, que ocorre em até 24 horas após a prisão.
+                        </p>
+                        <p>
+                          <strong>Período Posterior:</strong> Mesmo após a audiência, o pedido pode ser feito a 
+                          qualquer momento durante o processo, mas a rapidez aumenta significativamente as chances de sucesso.
+                        </p>
+                        <p>
+                          <strong>Estratégia Processual:</strong> A agilidade permite aproveitar o momento em que o 
+                          caso ainda não foi totalmente analisado pelos órgãos de acusação.
+                        </p>
                       </div>
                     </div>
 
@@ -276,8 +378,8 @@ export function ArtigoLiberdadeProvisoriaProf() {
                       <h4 className="font-bold text-yellow-800 mb-3">⚠️ Atenção Importante</h4>
                       <p className="text-yellow-700 text-sm leading-relaxed">
                         O tempo é um fator crucial. Quanto mais rapidamente o pedido for apresentado após a prisão, 
-                        maiores são as chances de sucesso. Por isso, é essencial buscar orientação jurídica 
-                        especializada imediatamente.
+                        maiores são as chances de sucesso. A experiência do advogado criminalista é determinante 
+                        para identificar o momento ideal e a estratégia mais eficaz para cada caso específico.
                       </p>
                     </div>
                   </div>
@@ -293,30 +395,161 @@ export function ArtigoLiberdadeProvisoriaProf() {
                       </h2>
                     </div>
 
-                    <p className="mb-6 text-secondary-700 leading-relaxed">
+                    <p className="mb-8 text-secondary-700 leading-relaxed">
                       Para fortalecer o pedido de liberdade provisória, alguns documentos são fundamentais. 
-                      Eles ajudam a demonstrar os vínculos da pessoa com a sociedade e sua idoneidade.
+                      Eles ajudam a demonstrar os vínculos da pessoa com a sociedade, sua idoneidade e a 
+                      desnecessidade da manutenção da prisão. A apresentação organizada e estratégica desses 
+                      documentos pode ser decisiva para o deferimento do pedido.
                     </p>
 
-                    <div className="grid md:grid-cols-2 gap-6 mb-8">
+                    <div className="bg-teal-50 border border-teal-200 rounded-2xl p-6 mb-8">
+                      <h4 className="font-bold text-teal-800 mb-4">🎯 Estratégia Documental</h4>
+                      <p className="text-teal-700 text-sm mb-4">
+                        A documentação deve ser apresentada de forma a construir um perfil sólido do acusado, 
+                        demonstrando seus vínculos sociais e a baixa probabilidade de risco para a sociedade.
+                      </p>
+                      <div className="grid md:grid-cols-3 gap-4 text-xs">
+                        <div className="text-center">
+                          <div className="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <span className="text-white font-bold">📋</span>
+                          </div>
+                          <h6 className="font-semibold text-teal-700">Documentação Pessoal</h6>
+                        </div>
+                        <div className="text-center">
+                          <div className="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <span className="text-white font-bold">🏠</span>
+                          </div>
+                          <h6 className="font-semibold text-teal-700">Vínculos Sociais</h6>
+                        </div>
+                        <div className="text-center">
+                          <div className="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <span className="text-white font-bold">⚖️</span>
+                          </div>
+                          <h6 className="font-semibold text-teal-700">Antecedentes</h6>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-6 mb-8">
                       <div className="bg-white border border-secondary-200 rounded-2xl p-6 shadow-sm">
                         <h5 className="font-semibold text-secondary-900 mb-4">📄 Documentos Pessoais</h5>
                         <ul className="space-y-2 text-secondary-700 text-sm">
-                          <li>• RG e CPF</li>
-                          <li>• Comprovante de residência</li>
-                          <li>• Certidão de nascimento/casamento</li>
-                          <li>• Atestado de antecedentes</li>
+                          <li>• <strong>RG e CPF:</strong> Identificação oficial válida</li>
+                          <li>• <strong>Comprovante de residência:</strong> Demonstração de domicílio fixo</li>
+                          <li>• <strong>Certidão de nascimento/casamento:</strong> Estado civil e vínculos familiares</li>
+                          <li>• <strong>Atestado de antecedentes criminais:</strong> Comprovação de primariedade</li>
+                          <li>• <strong>Certidões de distribução:</strong> Ausência de outros processos</li>
                         </ul>
                       </div>
 
                       <div className="bg-white border border-secondary-200 rounded-2xl p-6 shadow-sm">
-                        <h5 className="font-semibold text-secondary-900 mb-4">💼 Vínculos Sociais</h5>
+                        <h5 className="font-semibold text-secondary-900 mb-4">💼 Vínculos Profissionais</h5>
                         <ul className="space-y-2 text-secondary-700 text-sm">
-                          <li>• Carteira de trabalho</li>
-                          <li>• Declaração de emprego</li>
-                          <li>• Comprovante de renda</li>
-                          <li>• Declarações de pessoas próximas</li>
+                          <li>• <strong>Carteira de trabalho:</strong> Histórico profissional</li>
+                          <li>• <strong>Declaração de emprego:</strong> Situação atual de trabalho</li>
+                          <li>• <strong>Comprovante de renda:</strong> Estabilidade financeira</li>
+                          <li>• <strong>Contratos de trabalho:</strong> Vínculos empregatícios formais</li>
+                          <li>• <strong>Registro profissional:</strong> Inscrições em conselhos de classe</li>
                         </ul>
+                      </div>
+
+                      <div className="bg-white border border-secondary-200 rounded-2xl p-6 shadow-sm">
+                        <h5 className="font-semibold text-secondary-900 mb-4">🏠 Vínculos Sociais</h5>
+                        <ul className="space-y-2 text-secondary-700 text-sm">
+                          <li>• <strong>Declarações familiares:</strong> Apoio de pessoas próximas</li>
+                          <li>• <strong>Comprovante de dependentes:</strong> Responsabilidades familiares</li>
+                          <li>• <strong>Atestados médicos:</strong> Condições de saúde relevantes</li>
+                          <li>• <strong>Participação comunitária:</strong> Atividades sociais ou religiosas</li>
+                          <li>• <strong>Referências pessoais:</strong> Testemunhas de boa conduta</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Seção 5 - Nova seção sobre Fiança */}
+                  <div className="mb-16">
+                    <div className="flex items-center mb-8">
+                      <div className="w-12 h-12 bg-gradient-to-br from-accent-500 to-accent-600 rounded-xl flex items-center justify-center mr-6 shadow-lg">
+                        <span className="text-white font-bold text-lg">5</span>
+                      </div>
+                      <h2 className="text-3xl font-bold text-secondary-900">
+                        Como Funciona a Fiança
+                      </h2>
+                    </div>
+
+                    <p className="mb-6 text-secondary-700 leading-relaxed">
+                      A fiança é um valor pecuniário pago pelo acusado como garantia de que ele comparecerá 
+                      a todos os atos do processo e não fugirá. O valor da fiança é fixado pelo juiz, considerando 
+                      a natureza do crime, as condições financeiras do acusado e a gravidade da conduta.
+                    </p>
+
+                    <div className="bg-indigo-50 border border-indigo-200 rounded-2xl p-8 mb-8">
+                      <h4 className="font-bold text-indigo-800 mb-6 text-center text-xl">
+                        Critérios para Fixação do Valor da Fiança
+                      </h4>
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <h6 className="font-semibold text-indigo-700 mb-3 flex items-center">
+                            <div className="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center mr-3">
+                              <span className="text-white text-xs">💰</span>
+                            </div>
+                            Situação Financeira
+                          </h6>
+                          <p className="text-indigo-600 text-sm">
+                            Análise da capacidade econômica do acusado para estabelecer valor proporcional
+                          </p>
+                        </div>
+                        <div>
+                          <h6 className="font-semibold text-indigo-700 mb-3 flex items-center">
+                            <div className="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center mr-3">
+                              <span className="text-white text-xs">⚖️</span>
+                            </div>
+                            Gravidade do Delito
+                          </h6>
+                          <p className="text-indigo-600 text-sm">
+                            Consideração da natureza e circunstâncias do crime praticado
+                          </p>
+                        </div>
+                        <div>
+                          <h6 className="font-semibold text-indigo-700 mb-3 flex items-center">
+                            <div className="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center mr-3">
+                              <span className="text-white text-xs">👤</span>
+                            </div>
+                            Antecedentes Pessoais
+                          </h6>
+                          <p className="text-indigo-600 text-sm">
+                            Histórico criminal e conduta social anterior do acusado
+                          </p>
+                        </div>
+                        <div>
+                          <h6 className="font-semibold text-indigo-700 mb-3 flex items-center">
+                            <div className="w-8 h-8 bg-indigo-600 rounded-full flex items-center justify-center mr-3">
+                              <span className="text-white text-xs">🏃</span>
+                            </div>
+                            Risco de Fuga
+                          </h6>
+                          <p className="text-indigo-600 text-sm">
+                            Avaliação da probabilidade de o acusado tentar se evadir
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
+                      <h4 className="font-bold text-green-800 mb-4">💡 Importante Sobre a Fiança</h4>
+                      <div className="space-y-3 text-green-700 text-sm">
+                        <p>
+                          <strong>Valor Justo:</strong> A fiança deve ser proporcional à situação financeira do acusado, 
+                          não podendo ser nem irrisória nem impossível de ser paga.
+                        </p>
+                        <p>
+                          <strong>Modalidades de Pagamento:</strong> Pode ser paga em dinheiro, através de seguro-garantia 
+                          ou mediante hipoteca de bem imóvel.
+                        </p>
+                        <p>
+                          <strong>Devolução:</strong> O valor é devolvido ao final do processo, desde que o acusado 
+                          tenha cumprido todas as condições impostas.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -327,14 +560,20 @@ export function ArtigoLiberdadeProvisoriaProf() {
                       <span className="text-accent-300">Considerações Finais</span>
                     </h3>
                     <p className="mb-6 leading-relaxed text-secondary-100">
-                      A liberdade provisória é um direito fundamental que pode fazer toda a diferença na vida de uma pessoa 
-                      e sua família. Compreender como funciona este processo é o primeiro passo para tomar as decisões 
-                      corretas em um momento difícil.
+                      A liberdade provisória é um pilar fundamental da justiça criminal brasileira que busca evitar 
+                      prisões desnecessárias e garantir o direito de defesa em liberdade. Este direito harmoniza 
+                      a necessidade de segurança pública com a presunção de inocência, permitindo que o acusado 
+                      responda ao processo sem a privação antecipada da liberdade.
                     </p>
-                    <p className="leading-relaxed text-secondary-200 text-center">
-                      Lembre-se: cada caso é único e merece atenção especializada. A orientação jurídica adequada 
-                      é essencial para garantir que todos os direitos sejam respeitados e que as melhores 
-                      estratégias sejam adotadas.
+                    <p className="mb-6 leading-relaxed text-secondary-200">
+                      No entanto, sua obtenção é uma batalha jurídica complexa que exige estratégia, conhecimento 
+                      técnico especializado e agilidade processual. A análise criteriosa dos critérios legais, 
+                      a documentação adequada e a argumentação jurídica sólida são elementos decisivos para o sucesso.
+                    </p>
+                    <p className="leading-relaxed text-secondary-200 text-center font-medium">
+                      Contar com um advogado criminalista experiente e competente é o passo decisivo para 
+                      proteger sua liberdade e garantir um processo justo, respeitando todos os direitos 
+                      fundamentais assegurados pela Constituição Federal.
                     </p>
                   </div>
 
@@ -388,7 +627,8 @@ export function ArtigoLiberdadeProvisoriaProf() {
                         "O Que É Liberdade Provisória",
                         "Quando Pode Ser Concedida", 
                         "Como Solicitar",
-                        "Documentos Necessários"
+                        "Documentos Necessários",
+                        "Como Funciona a Fiança"
                       ].map((item, index) => (
                         <a 
                           key={index}
